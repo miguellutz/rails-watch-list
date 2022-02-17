@@ -1,0 +1,9 @@
+<h2>Your Movies</h2>
+
+<% @movies.each do |movie| %>
+  <%= movie.title %>
+  <%= movie.overview%>
+  <img href="#{movie.poste_url" alt="movie poster">
+  <%= movie.rating%>
+  <p><%= link_to 'Show', list %></p>
+<% end %>

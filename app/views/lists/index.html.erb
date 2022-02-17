@@ -1,0 +1,10 @@
+<h2>Your Lists</h2>
+
+<% @lists.each do |list| %>
+  <%= list.name %>
+  <p><%= link_to 'Show', list %></p>
+  <p><%= link_to 'Delete', list, method: :delete, data: { confirm: 'Are you sure?' }  %>
+  <br>
+<% end %>
+
+<%= link_to 'New List', new_list_path %>
